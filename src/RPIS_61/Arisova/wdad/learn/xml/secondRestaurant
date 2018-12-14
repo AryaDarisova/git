@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<restaurant>
+    <date day="24" month="11" year="2018">
+        <order>
+            <officiant firstName="alex" secondName="petrov">Alex Petrov</officiant>
+            <item name="peperoniThirdSize" cost="655">Пицца Пепперони 35 см</item>
+            <item name="gawaiiFirstSize" cost="455">Пицца Гавайская 25 см</item>
+            <item name="cheeseThirdSize" cost="645">Пицца 4 Сыра 35 см</item>
+            <totalcost>1755</totalcost>
+        </order>
+    </date>
+    <date day="27" month="11" year="2018">
+        <order>
+            <item name="peperoniThirdSize" cost="655">Пицца Пепперони 35 см</item>
+            <totalcost>655</totalcost>
+        </order>
+        <order>
+            <officiant secondName="ivanov">Alex Ivanov</officiant>
+            <item name="assortiFirstSize" cost="455">Пицца Ассорти 25 см</item>
+        </order>
+    </date>
+    <date day="28" month="11" year="2018">
+        <order>
+            <officiant firstName="pavel" secondName="sidorov">Pavel Sidorov</officiant>
+            <item name="peperoniSecondSize" cost="555">Пицца Пепперони 30 см</item>
+        </order>
+        <order>
+            <officiant secondName="petrov">Alex Petrov</officiant>
+            <item name="peperoniThirdSize" cost="655">Пицца Пепперони 35 см</item>
+            <item name="milkshakeOreo" cost="115">Милкшейк Орео</item>
+            <totalcost>770</totalcost>
+        </order>
+        <order>
+            <officiant secondName="ivanov">Alex Ivanov</officiant>
+            <item name="milkshakeOreo" cost="115">Милкшейк Орео</item>
+            <item name="greekSalad" cost="235">Греческий салат</item>
+            <totalcost>350</totalcost>
+        </order>
+    </date>
+</restaurant>
