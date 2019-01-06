@@ -17,13 +17,13 @@
         <totalcost>0</totalcost>
 </order>
         <order>
-            <officiant secondName="petrov">Alex Petrov</officiant>
+            <officiant firstName="alex" secondName="petrov">Alex Petrov</officiant>
             <item cost="655" name="peperoniThirdSize">Пицца Пепперони 35 см</item>
             <item cost="115" name="milkshakeOreo">Милкшейк Орео</item>
             <totalcost>770</totalcost>
         </order>
         <order>
-            <officiant secondName="ivanov">Alex Ivanov</officiant>
+            <officiant firstName="alex" secondName="ivanov">Alex Ivanov</officiant>
             <item cost="115" name="milkshakeOreo">Милкшейк Орео</item>
             <item cost="235" name="greekSalad">Греческий салат</item>
             <totalcost>0</totalcost>

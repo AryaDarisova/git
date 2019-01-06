@@ -18,3 +18,4 @@ directory or *jar file, or URL to *.jar file, containing *.class files -->
                 name CDATA #REQUIRED
                 class CDATA #REQUIRED
                >
+
