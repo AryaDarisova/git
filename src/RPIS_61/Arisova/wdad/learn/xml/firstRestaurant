@@ -9,7 +9,16 @@
             <totalcost>1755</totalcost>
         </order>
     </date>
-    
+    <date day="27" month="11" year="2018">
+        <order>
+            <item name="peperoniThirdSize" cost="655">Пицца Пепперони 35 см</item>
+            <totalcost>655</totalcost>
+        </order>
+        <order>
+            <officiant secondName="ivanov">Alex Ivanov</officiant>
+            <item name="assortiFirstSize" cost="455">Пицца Ассорти 25 см</item>
+        </order>
+    </date>
     <date day="28" month="11" year="2018">
         <order>
             <officiant firstName="roman" secondName="krasnov">Roman Krasnov</officiant>

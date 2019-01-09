@@ -4,8 +4,8 @@
     <server>
         <registry>
             <createregistry>yes</createregistry>
-            <registryaddress>127.0.0.1</registryaddress>
-            <registryport>1099</registryport>
+            <registryaddress>localhost</registryaddress>
+            <registryport>1090</registryport>
         </registry>
     </server>
     <client>

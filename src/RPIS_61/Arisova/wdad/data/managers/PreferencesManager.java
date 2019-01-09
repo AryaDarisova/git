@@ -34,7 +34,7 @@ public class PreferencesManager {
         try {
             factory = DocumentBuilderFactory.newInstance();
             builder = factory.newDocumentBuilder();
-            document = builder.parse(new File("src\\RPIS_61\\Arisova\\wdad\\resources\\configuration\\appConfig"));
+            document = builder.parse(new File("C:\\Users\\Arya\\Desktop\\starting-monkey-to-uman-path\\src\\RPIS_61\\Arisova\\wdad\\resources\\configuration\\appConfig"));
             XPathFactory xPathFactory = XPathFactory.newInstance();
             this.xPath = xPathFactory.newXPath();
         } catch (ParserConfigurationException | SAXException | IOException e) {
