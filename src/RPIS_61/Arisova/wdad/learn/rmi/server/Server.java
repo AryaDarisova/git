@@ -1,14 +1,12 @@
 package RPIS_61.Arisova.wdad.learn.rmi.server;
 
 import RPIS_61.Arisova.wdad.data.managers.PreferencesManager;
-import RPIS_61.Arisova.wdad.learn.rmi.Remote.XmlDataManager;
 import RPIS_61.Arisova.wdad.learn.rmi.Remote.XmlDataManagerImpl;
 import RPIS_61.Arisova.wdad.utils.PreferencesManagerConstants;
 
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
-import java.rmi.server.UnicastRemoteObject;
 
 public class Server {
     private static Registry registry;
@@ -29,8 +27,8 @@ public class Server {
                 registry = LocateRegistry.getRegistry(Integer.parseInt(manager.getProperty(PreferencesManagerConstants.REGISTRY_PORT)));
             }
             XmlDataManagerImpl xmlDataManager = new XmlDataManagerImpl();
-            //XmlDataManager stub = (XmlDataManager) UnicastRemoteObject.exportObject(xmlDataManager,0);
-            registry.bind("XmlDataManager", xmlDataManager);
+            //DataManager stub = (DataManager) UnicastRemoteObject.exportObject(xmlDataManager,0);
+            registry.bind("DataManager", xmlDataManager);
             System.out.println("Server start");
         }
         catch (Exception e){

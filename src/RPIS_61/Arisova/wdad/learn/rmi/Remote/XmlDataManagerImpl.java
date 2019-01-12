@@ -1,5 +1,6 @@
 package RPIS_61.Arisova.wdad.learn.rmi.Remote;
 
+import RPIS_61.Arisova.wdad.data.managers.DataManager;
 import RPIS_61.Arisova.wdad.learn.xml.Officiant;
 import RPIS_61.Arisova.wdad.learn.xml.Order;
 import RPIS_61.Arisova.wdad.learn.xml.XmlTask;
@@ -10,7 +11,7 @@ import java.rmi.server.UnicastRemoteObject;
 import java.util.Calendar;
 import java.util.List;
 
-public class XmlDataManagerImpl extends UnicastRemoteObject implements XmlDataManager, Serializable {
+public class XmlDataManagerImpl extends UnicastRemoteObject implements DataManager, Serializable {
     private XmlTask xmlTask;
 
     public XmlDataManagerImpl() throws RemoteException {

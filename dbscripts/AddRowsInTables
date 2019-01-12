@@ -1,0 +1,33 @@
+INSERT INTO officiants (first_name, second_name)
+VALUES ('alex', 'petrov'),
+       ('alex', 'ivanov'),
+       ('roman', 'krasnov'),
+       ('ivan', 'sadov'),
+       ('igor', 'petrov');
+
+INSERT INTO orders (`date`, officiant_id)
+VALUES ('2018-11-24', 1),
+       ('2018-11-27', 2),
+       ('2018-11-28', 3),
+       ('2018-11-28', 1),
+       ('2018-11-28', 2);
+
+INSERT INTO items_orders (orders_id, items_dictionary_id, quantity)
+VALUES (1, 1, 1),
+       (1, 2, 1),
+       (1, 3, 1),
+       (3, 5, 1),
+       (4, 1, 1),
+       (4, 7, 1),
+       (5, 6, 1),
+       (5, 7, 1);
+
+INSERT INTO items (`name`, description, cost)
+VALUES ('peperoniThirdSize', 'Пицца Пепперони 35 см', 655),
+       ('gawaiiFirstSize', 'Пицца Гавайская 25 см', 455),
+       ('cheeseThirdSize', 'Пицца 4 Сыра 35 см', 645),
+       ('assortiFirstSize', 'Пицца Ассорти 25 см', 455),
+       ('peperoniSecondSize', 'Пицца Пепперони 30 см', 555),
+       ('milkshakeOreo', 'Милкшейк Орео', 115),
+       ('greekSalad', 'Греческий салат', 235);
+

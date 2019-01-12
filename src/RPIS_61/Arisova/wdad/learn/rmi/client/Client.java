@@ -1,7 +1,7 @@
 package RPIS_61.Arisova.wdad.learn.rmi.client;
 
 import RPIS_61.Arisova.wdad.data.managers.PreferencesManager;
-import RPIS_61.Arisova.wdad.learn.rmi.Remote.XmlDataManager;
+import RPIS_61.Arisova.wdad.data.managers.DataManager;
 import RPIS_61.Arisova.wdad.learn.xml.Officiant;
 import RPIS_61.Arisova.wdad.utils.PreferencesManagerConstants;
 
@@ -29,7 +29,7 @@ public class Client {
             /*System.out.println(registry.toString());
             String[] list = registry.list();
             System.out.println(list.length);*/
-            XmlDataManager stub = (XmlDataManager) registry.lookup("XmlDataManager");
+            DataManager stub = (DataManager) registry.lookup("DataManager");
             stub.removeDay(new GregorianCalendar(2018, 11, 27));
             Officiant alex = new Officiant("alex", "petrov");
             System.out.println(stub.earningsTotal(alex, new GregorianCalendar(2018, 11, 28)));
