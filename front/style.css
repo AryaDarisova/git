@@ -1,0 +1,199 @@
+:root {
+    background-color: black;
+    --delemiter-color: blue;
+    --activ-region-color: #ffffff;
+    font-family: Ubuntu;
+}
+
+body {
+    position: relative;
+}
+
+#header {
+    position: relative;
+}
+
+.squid {
+    position: absolute;
+    float: left;
+    top: 30px;
+    left: 15%;
+}
+
+.hornsAndHooves {
+    position: absolute;
+    color: #1abc11;
+    text-align: center;
+    width: 40%;
+    float: left;
+    top: 10px;
+    left: 30%;
+}
+
+#hornsAndHooves {
+    font-size: 35px;
+}
+
+#notStandart {
+    font-size: 16px;
+}
+
+.cart {
+    position: absolute;
+    color: #1abc11;
+    text-align: center;
+    width: 20%;
+    height: 100px;
+    float: left;
+    top: 50px;
+    right: 10%;
+}
+
+#customer {
+    text-align: center;
+    font-size: 11px;
+}
+
+.content {
+    position: relative;
+    background-color: #FFDA44;
+    margin-left: 15%;
+    width: 70%;
+    top: 160px;
+    height: 1100px;
+    margin-bottom: 30px;
+    
+}
+
+.allMainDishesDesert {
+    position: relative;
+    font-size: 10px;
+    top: 0px;
+    height: 50px;
+    background-color: #1abc11;
+}
+
+#all {
+    position: absolute;
+    width: 25%;
+    text-align: center;
+    border-top-right-radius: 10px;
+    top: 0px;
+    background-color: #FFDA44;
+}
+
+#mainDishes {
+    position: absolute;
+    width: 25%;
+    text-align: center;
+    top: 0px;
+    left: 25%;
+}
+
+#dessert {
+    position: absolute;
+    width: 25%;
+    text-align: center;
+    top: 0px;
+    left: 50%;
+}
+
+#other {
+    position: absolute;
+    width: 25%;
+    text-align: center;
+    top: 0px;
+    left: 75%;
+}
+
+#allCenter {
+    text-align: center;
+    font-size: 20px;
+}
+
+#firstFood, #secondFood, #thirdFood {
+    background-color: #1abc11;
+    border-radius: 25px;
+    padding: 20px;
+    margin: 30px;
+    height: 225px;
+}
+
+#pizzaImg, #burgerImg, #hotdogImg {
+    float: left;
+    padding: 25px;
+    background-color: white;
+    border-radius: 25px;
+}
+
+#pizzaContent, #burgerContent, #hotDogContent {
+    float: left;
+    padding: 30px;
+    width: 650px;
+}
+
+#pizzaName, #burgerName, #hotDogName {
+    font-size: 20px;
+}
+
+#pizzaAbout, #burgerAbout, #hotAbout {
+    font-size: 16px;
+}
+
+.selectInputButton {
+    padding: 20px;
+}
+
+#pizzaSelect, #burgerSelect, #hotDogSelect {
+    margin-left: 30px;
+    float: left;
+}
+
+#pizzaInput, #burgerInput, #hotDogInput {
+    width: 15%;
+    float: left;
+    margin-left: 30px;
+}
+
+#pizzaButton, #burgerButton, #hotDogButton {
+    width: 15%;
+    float: left;
+    margin-left: 30px;
+}
+
+select {
+    width: 300px;
+    font-family: Ubuntu;
+    height: 40px;
+}
+
+input {
+    width: 50px;
+    font-family: Ubuntu;
+    height: 35px;
+}
+
+button {
+    font-family: Ubuntu;
+    height: 40px;
+}
+
+select, input, button {
+    text-decoration: none;
+    user-select: none;
+    padding: .2em 1.2em;
+    outline: none;
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 2px;
+    background: rgb(245,245,245) linear-gradient(#f4f4f4, #f1f1f1);
+    transition: all .218s ease 0s;
+}
+
+#thisIsTheEnd {
+    font-size: 30px;
+    text-align: center;
+}
+
+
+
+
