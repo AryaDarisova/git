@@ -34,7 +34,7 @@ public class PreferencesManager {
         try {
             factory = DocumentBuilderFactory.newInstance();
             builder = factory.newDocumentBuilder();
-            document = builder.parse(new File("src\\RPIS_61\\Arisova\\wdad\\resources\\configuration\\appConfig"));
+            document = builder.parse(new File("C:\\Users\\Arya\\Desktop\\starting-monkey-to-uman-path\\src\\RPIS_61\\Arisova\\wdad\\resources\\configuration\\appConfig"));
             XPathFactory xPathFactory = XPathFactory.newInstance();
             this.xPath = xPathFactory.newXPath();
         } catch (ParserConfigurationException | SAXException | IOException e) {
@@ -80,7 +80,11 @@ public class PreferencesManager {
         Properties properties = new Properties();
         String[] keys = {PreferencesManagerConstants.CREATE_REGISTRY, PreferencesManagerConstants.REGISTRY_ADDRESS,
             PreferencesManagerConstants.REGISTRY_PORT, PreferencesManagerConstants.POLICY_PATH,
-            PreferencesManagerConstants.USE_CODE_BASE_ONLY, PreferencesManagerConstants.CLASS_PROVIDER};
+            PreferencesManagerConstants.USE_CODE_BASE_ONLY, PreferencesManagerConstants.CLASS_PROVIDER,
+            PreferencesManagerConstants.CLASS_NAME, PreferencesManagerConstants.DRIVER_TYPE,
+            PreferencesManagerConstants.HOST_NAME, PreferencesManagerConstants.PORT,
+            PreferencesManagerConstants.DB_NAME, PreferencesManagerConstants.USER,
+            PreferencesManagerConstants.PASSWORD};
         for(String key : keys){
             properties.setProperty(key, getProperty(key));
         }
@@ -170,6 +174,83 @@ public class PreferencesManager {
     @Deprecated
     public String getClassProvider() {
         return document.getElementsByTagName("classprovider").item(0).getTextContent();
+    }
+
+    @Deprecated
+    public void setClassName(String className) {
+        document.getElementsByTagName("classname").item(0).setTextContent(className);
+        writeXml();
+    }
+
+    @Deprecated
+    public String getClassName() {
+        return document.getElementsByTagName("classname").item(0).getTextContent();
+    }
+
+    @Deprecated
+    public void setDriverType(String driverType) {
+        document.getElementsByTagName("drivertype").item(0).setTextContent(driverType);
+        writeXml();
+    }
+
+    @Deprecated
+    public String getDriverType() {
+        return document.getElementsByTagName("drivertype").item(0).getTextContent();
+    }
+
+    @Deprecated
+    public void setHostName(String hostName) {
+        document.getElementsByTagName("hostName").item(0).setTextContent(hostName);
+        writeXml();
+    }
+
+    @Deprecated
+    public String getHostName() {
+        return document.getElementsByTagName("hostName").item(0).getTextContent();
+    }
+
+    @Deprecated
+    public void setPort(String port) {
+        document.getElementsByTagName("port").item(0).setTextContent(port);
+        writeXml();
+    }
+
+    @Deprecated
+    public String getPort() {
+        return document.getElementsByTagName("port").item(0).getTextContent();
+    }
+
+    @Deprecated
+    public void setDBName(String DBName) {
+        document.getElementsByTagName("DBName").item(0).setTextContent(DBName);
+        writeXml();
+    }
+
+    @Deprecated
+    public String getDBName() {
+        return document.getElementsByTagName("DBName").item(0).getTextContent();
+    }
+
+    @Deprecated
+    public void setUser(String user) {
+        document.getElementsByTagName("user").item(0).setTextContent(user);
+        writeXml();
+    }
+
+    @Deprecated
+    public String getUser() {
+        return document.getElementsByTagName("user").item(0).getTextContent();
+    }
+
+    @Deprecated
+    public void setPassword(String password) {
+        document.getElementsByTagName("pass").item(0).setTextContent(password);
+        writeXml();
+    }
+
+    @Deprecated
+    public String getPassword() {
+        return document.getElementsByTagName("pass").item(0).getTextContent();
     }
 
     private void writeXml() {

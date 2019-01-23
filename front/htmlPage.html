@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css">
+    <title>Нестардартная харчевня</title>
+</head>
+<body>
+<div id="header">
+    <div class="squid">
+        <img src="img/squid.png" width="100px" height="100px">
+    </div>
+    <div class="hornsAndHooves">
+        <h1 id ="hornsAndHooves">Horns and Hooves</h1>
+        <h1 id ="notStandart">Нестандартная харчевня</h1>
+    </div>
+    <div class="cart">
+        <img src="img/shopping-cart.png" width="40px" height="40px">
+        <h1 id="customer">Побегушкин Принеси Подай</h1>
+    </div>
+</div>
+<div class="content">
+    <div class="allMainDishesDesert">
+        <div id="all"><h1>Все</h1></div>
+        <div id="mainDishes"><h1>Основные блюда</h1></div>
+        <div id="dessert"><h1>Десерт</h1></div>
+        <div id="other"><h1>...</h1></div>
+    </div>
+    </br>
+    <h1 id="allCenter">Все</h1>
+    <div id="firstFood">
+        <div id="pizzaImg"><img src="img/pizza.png" width="170px" height="170px"></div>
+        <div id="pizzaContent">
+            <h1 id="pizzaName">Пицца</h1>
+            <h1 id="pizzaAbout">На выбор предлагаются такие пиццы, как "Ассорти", "Пепперони" и "Сырная". Вы можете выбрать один из трёх размеров: 25 см, 30 см и 35 см</h1>
+        </div>
+        <div class="selectInputButton">
+            <div id="pizzaSelect">
+                <select name="pizza">
+                    <option>Выберите из списка</option>
+                    <option>Ассорти 25 см</option>
+                    <option>Ассорти 30 см</option>
+                    <option>Ассорти 35 см</option>
+                    <option>Пепперони 25 см</option>
+                    <option>Пепперони 30 см</option>
+                    <option>Пепперони 35 см</option>
+                    <option>Сырная 25 см</option>
+                    <option>Сырная 30 см</option>
+                    <option>Сырная 35 см</option>
+                </select>
+            </div>
+            <div id="pizzaInput">
+                <input type="number" name="num" value="1" min="1" max="30" step="1">
+            </div>
+            <div id="pizzaButton">
+                <button>Добавить в корзину</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="secondFood">
+        <div id="burgerImg"><img src="img/burger.png" width="170px" height="170px"></div>
+        <div id="burgerContent">
+            <h1 id="burgerName">Бургер</h1>
+            <h1 id="burgerAbout">На выбор предлагаются воппер, острый воппер, чизбургер и гамбургер</h1>
+        </div>
+        <div class="selectInputButton">
+            <div id="burgerSelect">
+                <select name="burger">
+                    <option>Выберите из списка</option>
+                    <option>Воппер</option>
+                    <option>Острый воппер</option>
+                    <option>Чизбургер</option>
+                    <option>Гамбургер</option>
+                </select>
+            </div>
+            <div id="burgerInput">
+                <input type="number" name="num" value="1" min="1" max="30" step="1">
+            </div>
+            <div id="burgerButton">
+                <button>Добавить в корзину</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="thirdFood">
+        <div id="hotdogImg"><img src="img/hot-dog.png" width="170px" height="170px"></div>
+        <div id="hotDogContent">
+            <h1 id="hotDogName">Хот Дог</h1>
+            <h1 id="hotAbout">На выбор предлагается американский и острый хот дог</h1>
+        </div>
+        <div class="selectInputButton">
+            <div id="hotDogSelect">
+                <select name="burger">
+                    <option>Выберите из списка</option>
+                    <option>Американский</option>
+                    <option>Острый</option>
+                </select>
+            </div>
+            <div id="hotDogInput">
+                <input type="number" name="num" value="1" min="1" max="30" step="1">
+            </div>
+            <div id="hotDogButton">
+                <button>Добавить в корзину</button>
+            </div>
+        </div>
+    </div>
+    <h1 id="thisIsTheEnd">...</h1>
+</div>
+</body>
+</html>

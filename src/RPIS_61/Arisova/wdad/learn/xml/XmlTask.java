@@ -29,7 +29,8 @@ public class XmlTask {
         try {
             factory = DocumentBuilderFactory.newInstance();
             builder = factory.newDocumentBuilder();
-            document = builder.parse(new File("src\\RPIS_61\\Arisova\\wdad\\learn\\xml\\firstRestaurant"));
+            //document = builder.parse(new File("src\\RPIS_61\\Arisova\\wdad\\learn\\xml\\firstRestaurant"));
+            document = builder.parse(new File("C:\\Users\\Arya\\Desktop\\starting-monkey-to-uman-path\\src\\RPIS_61\\Arisova\\wdad\\learn\\xml\\firstRestaurant"));
         } catch (ParserConfigurationException | SAXException | IOException e) {
             e.printStackTrace();
         }

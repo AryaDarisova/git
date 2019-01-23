@@ -1,0 +1,38 @@
+CREATE DATABASE restaurant;
+
+CREATE TABLE IF NOT EXISTS officiants (
+  id int(10) NOT NULL AUTO_INCREMENT,
+  first_name varchar(50) NOT NULL,
+  second_name varchar(50) NOT NULL,
+  PRIMARY KEY (id)
+);
+
+CREATE TABLE IF NOT EXISTS orders (
+  id int(10) NOT NULL AUTO_INCREMENT,
+  date DATE NOT NULL,
+  officiant_id int(10) NOT NULL,
+  PRIMARY KEY (id)
+);
+
+CREATE TABLE IF NOT EXISTS items_orders (
+  id int(10) NOT NULL AUTO_INCREMENT,
+  orders_id int(10) NOT NULL,
+  items_dictionary_id int(10) NOT NULL,
+  quantity int(2) NOT NULL,
+  PRIMARY KEY (id)
+);
+
+CREATE TABLE IF NOT EXISTS items (
+  id int(10) NOT NULL AUTO_INCREMENT,
+  name varchar(50) NOT NULL,
+  description varchar(50) NOT NULL,
+  cost numeric(10,3) NOT NULL,
+  PRIMARY KEY (id)
+);
+
+/*DROP TABLE orders;
+
+DROP TABLE items_orders;*/
+
+
+
